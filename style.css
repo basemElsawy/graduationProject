@@ -8,6 +8,13 @@
 }
 
 /*----------------------------HEADER SECTION ----------------------------*/
+.coach {
+  color: white;
+}
+.coach:hover {
+  color: #ffae21;
+}
+
 .logo {
   font-family: 'Work Sans';
   transition: 0.5s ease;
@@ -53,7 +60,8 @@ a {
 }
 a:hover {
   color: #ffae21;
-  transform: scale(1.5);
+
+  font-size: 1rem;
   cursor: pointer;
 }
 li {
@@ -63,7 +71,8 @@ li {
 /*------------------------------------------------MAIN SECTION-------------------------------------*/
 .first-img {
   width: 1400px;
-  height: 565px;
+  height: 600px;
+  transform: translateY(-40px);
   border-radius: 5px 5px;
   margin-right: 1.7rem;
   margin-left: 1.7rem;
@@ -85,7 +94,7 @@ p {
   flex-direction: column;
   width: 1400px;
   transform: translateX(60px);
-  height: 1000px;
+  height: 1100px;
   border-radius: 5px 5px 5px 5px;
   background-color: #223341;
   justify-content: center;
@@ -108,12 +117,16 @@ p {
   padding-left: 100px;
   padding-right: 100px;
   align-items: baseline;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .vertical-line {
   position: absolute;
-  background-color: rgb(0, 0, 0);
-  top: 50%;
+  top: 700px;
+  height: 300px;
+  width: 5px;
+  right: 710px;
+  border-radius: 5px;
+  background-color: rgb(247, 245, 245);
   z-index: 1000;
 }
