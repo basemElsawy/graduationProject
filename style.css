@@ -245,12 +245,15 @@ p {
   color: #ffae21;
 }
 .slide p {
-  text-align: justify;
+  text-align: center;
   font-size: 2rem;
   font-weight: bold;
+  color: white;
+  background-color: #223341;
+  border-radius: 0px 0px 15px 15px;
 }
 .slider {
-  width: 1000px;
+  width: 800px;
   height: 600px;
   border-radius: 10px;
   overflow: hidden;
@@ -346,4 +349,77 @@ p {
 }
 #radio4:checked ~ .navigation-auto .auto-btn4 {
   background: #ffae21;
+}
+/* ----------------------------MAIN Section -3-2 ---------------*/
+.section-header {
+  text-align: center;
+  margin-bottom: 100px;
+  background-color: #223341;
+  width: 700px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  transform: translateX(400px);
+}
+
+.main-section-2 {
+  display: flex;
+  justify-content: space-around;
+  height: 350px;
+}
+.card {
+  transition: 1s ease;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.name {
+  margin-top: 1px;
+  color: #fff;
+  letter-spacing: 5px;
+  padding: 20px;
+  background-color: #223341;
+}
+.coach-card-2 {
+  transform: translateX(-8px);
+}
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.path-choice a > img {
+  filter: invert(70%) sepia(50%) saturate(10207%) hue-rotate(1deg)
+    brightness(95%) contrast(70%);
+  margin-bottom: -3px;
+}
+.path-choice a {
+  color: black;
+  display: flex;
+  font-weight: bold;
+
+  align-items: center;
+  flex-direction: column;
+}
+.b-building {
+  transform: translateY(12px);
+}
+
+.path-choice {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 450px;
+  margin-left: 450px;
+}
+
+.path-choice a:hover {
+  color: #ffae21;
+}
+.num1 {
+  background-color: #fff;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
