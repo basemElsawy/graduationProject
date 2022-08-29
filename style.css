@@ -413,19 +413,24 @@ p {
   justify-content: space-evenly;
   margin-right: 450px;
   margin-left: 450px;
+
+  opacity: 0.8;
 }
 .path-choice img {
   transition: 0.5s;
+  opacity: 1;
 }
 .path-choice img:hover {
   filter: invert(80%) sepia(30%) saturate(11207%) hue-rotate(0deg)
     brightness(95%) contrast(150%);
-  transform: scale(1.05);
+  transform: scale(1.01);
+  opacity: 1;
 }
 
 .path-choice a:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   color: #ffae21;
+  opacity: 1;
 }
 .num1 {
   background-color: #fff;
@@ -555,4 +560,10 @@ footer {
 #contact-links3:hover {
   color: #ffae21;
   opacity: 1;
+}
+
+.details {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
