@@ -1,5 +1,5 @@
 header {
-  margin-bottom: 100px;
+  margin-bottom: 300px;
 }
 main {
   transform: translateY(50px);
@@ -11,6 +11,18 @@ main {
 
   height: 600px;
   /* background-color: #223341; */
+}
+strong {
+  color: #ffae21;
+}
+#para-start {
+  color: #fff;
+  margin-left: 300px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.para {
+  text-align: center;
 }
 .image {
   border-radius: 10px 10px 0px 0px;
