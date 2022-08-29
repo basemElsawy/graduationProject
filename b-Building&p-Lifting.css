@@ -21,6 +21,7 @@ strong {
   margin-bottom: 5px;
   text-align: center;
 }
+
 .para {
   text-align: center;
 }
@@ -82,4 +83,11 @@ strong {
 #Assessing:hover {
   opacity: 1;
   color: #ffae21;
+}
+
+.sm-logo:hover::after {
+  content: url('pictures used/muscle.png');
+  display: inline-block;
+  width: 12px;
+  height: 12px;
 }
