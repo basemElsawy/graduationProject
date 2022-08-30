@@ -24,7 +24,7 @@ let scrollFunction = () => {
     logoImg.style.width = '100px';
     logoImg.style.height = '100px';
     header.style.marginLeft = '10px';
-    header.style.boxShadow = '0px 2px 30px 2px black';
+    header.style.boxShadow = '0px 2px 40px 2px black';
     header.style.borderRadius = '0px 0px 10px 10px';
     listItems.style.transform = 'scale(1)';
   } else {
