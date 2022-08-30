@@ -4,16 +4,22 @@ let navBar = document.getElementById('navbar');
 let header = document.querySelector('.header');
 let logo = document.getElementById('Logo');
 let logoImg = document.querySelector('.logo-muscle');
-let listItems = document.querySelectorAll('.navbar-links');
+let listItems = document.querySelector('#un-orderedlist');
 
-//---------------------------functions and eventlisteners------------------------
-window.onscroll = function () {
+//-------------------------------Variables----------
+
+let counter = 1;
+//---------------------------functions and eventlisteners------------------------\
+document.addEventListener('DOMContentLoaded', function (event) {
   scrollFunction();
-};
+  window.onscroll = function () {
+    scrollFunction();
+  };
+});
 
 let scrollFunction = () => {
   if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
-    logo.style.fontSize = '25px';
+    logo.style.transform = 'scale(1)';
     header.style.marginRight = '10px';
     logoImg.style.width = '100px';
     logoImg.style.height = '100px';
@@ -22,15 +28,25 @@ let scrollFunction = () => {
     header.style.borderRadius = '0px 0px 10px 10px';
     listItems.style.transform = 'scale(1)';
   } else {
-    header.style.boxShadow = '0px 0px 0px 0px ';
+    header.style.boxShadow = 'none';
     header.style.marginRight = '0px';
     logoImg.style.width = '110px';
     logoImg.style.height = '100px';
     header.style.marginLeft = '0px';
     navBar.style.borderRadius = '0%';
     // logoImg.style.transform = 'translateY(2px)';
-    logo.style.fontSize = '30px';
+    logo.style.transform = 'scale(1.3)';
     header.style.borderRadius = '0px';
-    listItems.style.transform = 'scale(1.2)';
+    listItems.style.transform = 'scale(1.1)';
   }
 };
+
+//--------------slider functionality----------
+
+setInterval(() => {
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if (counter > 4) {
+    counter = 1;
+  }
+}, 3000);
