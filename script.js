@@ -1,0 +1,36 @@
+'use strict';
+//--------------------------DOM objects---------------
+let navBar = document.getElementById('navbar');
+let header = document.querySelector('.header');
+let logo = document.getElementById('Logo');
+let logoImg = document.querySelector('.logo-muscle');
+let listItems = document.querySelectorAll('.navbar-links');
+
+//---------------------------functions and eventlisteners------------------------
+window.onscroll = function () {
+  scrollFunction();
+};
+
+let scrollFunction = () => {
+  if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+    logo.style.fontSize = '25px';
+    header.style.marginRight = '10px';
+    logoImg.style.width = '100px';
+    logoImg.style.height = '100px';
+    header.style.marginLeft = '10px';
+    header.style.boxShadow = '0px 2px 30px 2px black';
+    header.style.borderRadius = '0px 0px 10px 10px';
+    listItems.style.transform = 'scale(1)';
+  } else {
+    header.style.boxShadow = '0px 0px 0px 0px ';
+    header.style.marginRight = '0px';
+    logoImg.style.width = '110px';
+    logoImg.style.height = '100px';
+    header.style.marginLeft = '0px';
+    navBar.style.borderRadius = '0%';
+    // logoImg.style.transform = 'translateY(2px)';
+    logo.style.fontSize = '30px';
+    header.style.borderRadius = '0px';
+    listItems.style.transform = 'scale(1.2)';
+  }
+};

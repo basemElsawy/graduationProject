@@ -36,7 +36,8 @@ header {
   font-weight: bolder;
   height: 100px;
   border-radius: 0 0 20px 20px;
-  margin: 10px;
+  /* margin: 10px; */
+  transition: 0.5s ease;
 
   margin-top: 0;
 }
@@ -45,6 +46,10 @@ header {
   transform: translateY(20px);
   /* transform: translate(20px); */
   margin-left: 100px;
+  transition: 0.5s ease;
+}
+.list-item {
+  transition: 0.5s ease;
 }
 
 .Nav-Bar {
