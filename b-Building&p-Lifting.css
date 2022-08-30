@@ -17,13 +17,15 @@ strong {
 }
 #para-start {
   color: #fff;
-  margin-left: 300px;
+  margin-left: 295px;
   margin-bottom: 5px;
   text-align: center;
 }
 
 .para {
   text-align: center;
+}
+.para-beg {
 }
 .image {
   border-radius: 10px 10px 0px 0px;
