@@ -88,7 +88,18 @@ li {
   border-radius: 5px 5px;
   margin-right: 1.7rem;
   margin-left: 1.7rem;
-  background-color: rgba(0, 0, 0, 0.051);
+  background-image: rgba(0, 0, 0, 0.525);
+}
+.p-lifting-header {
+  color: white;
+  position: absolute;
+  right: 43.5%;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #0c3c6453;
+  top: 48%;
+  font-size: 35px;
+  z-index: 1000;
 }
 span {
   color: #ffae21;
