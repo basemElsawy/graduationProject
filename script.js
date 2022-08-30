@@ -30,7 +30,7 @@ let scrollFunction = () => {
   } else {
     header.style.boxShadow = 'none';
     header.style.marginRight = '0px';
-    logoImg.style.width = '110px';
+    logoImg.style.width = '130px';
     logoImg.style.height = '100px';
     header.style.marginLeft = '0px';
     navBar.style.borderRadius = '0%';
